@@ -1,0 +1,14 @@
+background-color=#000000
+text-color=#ffffff
+font="JetBrainsMono NF" 16
+width=512
+height=128
+
+[urgency=low]
+border-color=#33ff00
+
+[urgency=normal]
+border-color=#ffbf00
+
+[urgency=high]
+border-color=#fe0100

@@ -1,0 +1,14 @@
+[mgr]
+show_hidden = true
+
+[opener]
+reveal = [
+	{ run = 'alacritty --working-directory .', block = false, orphan = true },
+]
+edit = [
+	{ run = 'nvim "$@"', block = true, orphan = true },
+]
+play = [
+	{ run = 'mpv "$@"', block = true, orphan = true },
+	{ run = 'vlc "$@"', block = true, orphan = true },
+]

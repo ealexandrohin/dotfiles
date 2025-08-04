@@ -1,0 +1,7 @@
+pkgname=Yellow
+pkgver=2025.08.04
+pkgrel=1
+arch=('any')
+url="https://github.com/eAlexandrohin/dotfiles"
+license=('MIT')
+depends=($(sed '/^[[:space:]]*$/d;/^[[:space:]]*#/d' .aur))
