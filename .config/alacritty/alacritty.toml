@@ -5,17 +5,17 @@ import = ["~/.config/alacritty/themes/hyper.toml"]
 size = 16.0
 
 [font.normal]
-family = "JetBrainsMono NF"
+family = "JetBrainsMonoNL NF"
 style = "Regular"
 
 [font.bold]
-family = "JetBrainsMono NF"
+family = "JetBrainsMonoNL NF"
 style = "Bold"
 
 [font.italic]
-family = "JetBrainsMono NF"
+family = "JetBrainsMonoNL NF"
 style = "Italic"
 
 [font.bold_italic]
-family = "JetBrainsMono NF"
+family = "JetBrainsMonoNL NF"
 style = "Bold Italic"

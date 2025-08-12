@@ -41,6 +41,9 @@ src/
 !/.config/hypr/hyprlock.conf
 !/.config/hypr/hyprpaper.conf
 
+!/.config/ly/
+!/.config/ly/config.ini
+
 !/.config/mako/
 !/.config/mako/config
 
@@ -48,6 +51,7 @@ src/
 !/.config/tofi/config
 
 !/.config/yazi/
+!/.config/yaxi/keymap.toml
 !/.config/yazi/theme.toml
 !/.config/yazi/yazi.toml
 
