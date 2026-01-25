@@ -39,9 +39,16 @@ src/
 !/.config/hypr/hyprland.conf
 !/.config/hypr/hyprlock.conf
 !/.config/hypr/hyprpaper.conf
+!/.config/hypr/wallpaper/
+!/.config/hypr/wallpaper/*
 
 !/.config/ly/
 !/.config/ly/config.ini
+
+!/.config/nvim/
+!/.config/nvim/lua/
+!/.config/nvim/lua/plugins/
+!/.config/nvim/lua/plugins/config.lua
 
 !/.config/mako/
 !/.config/mako/config
@@ -57,3 +64,5 @@ src/
 !/.deps/
 !/.deps/.deps
 !/.deps/PKGBUILD
+
+!/.gitconfig

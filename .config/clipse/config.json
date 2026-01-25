@@ -1,4 +1,12 @@
 {
   "allowDuplicates": false,
-  "maxHistory": 10000
+  "maxHistory": 10000,
+  "keyBindings": {
+    "prevPage": "h",
+    "down": "j",
+    "up": "k",
+    "nextPage": "l",
+    "selectDown": "J",
+    "selectUp": "K"
+  }
 }
