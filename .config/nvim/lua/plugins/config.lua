@@ -1,5 +1,11 @@
 return {
   {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin-mocha",
+    },
+  },
+  {
     "folke/snacks.nvim",
     opts = {
       picker = {
@@ -13,5 +19,5 @@ return {
     opts = {
       inlay_hints = { enabled = false },
     },
-  }
+  },
 }
