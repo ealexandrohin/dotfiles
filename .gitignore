@@ -47,10 +47,10 @@ src/
 !/.config/ly/
 !/.config/ly/config.ini
 
-!/.config/nvim/
-!/.config/nvim/lua/
-!/.config/nvim/lua/plugins/
-!/.config/nvim/lua/plugins/config.lua
+!/.config/neovim/
+!/.config/neovim/lua/
+!/.config/neovim/lua/plugins/
+!/.config/neovim/lua/plugins/config.lua
 
 !/.config/mako/
 !/.config/mako/config
