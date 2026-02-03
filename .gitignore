@@ -28,6 +28,8 @@ src/
 
 !/.config/btop/
 !/.config/btop/btop.conf
+!/.config/btop/themes/
+!/.config/btop/themes/catppuccin_mocha.theme
 
 !/.config/clipse/
 !/.config/clipse/config.json
@@ -57,9 +59,9 @@ src/
 !/.config/tofi/config
 
 !/.config/yazi/
-!/.config/yaxi/keymap.toml
 !/.config/yazi/theme.toml
 !/.config/yazi/yazi.toml
+!/.config/yazi/syntax.tmTheme
 
 !/.deps/
 !/.deps/.deps

@@ -1,7 +1,6 @@
 7zip
 alacritty
 bluetui
-bluez
 brightnessctl
 btop
 chafa
@@ -16,8 +15,8 @@ hyprlock
 hyprpaper
 imagemagick
 impala
-iwd
 jq
+lazygit
 mako
 neovim
 ntfs-3g
@@ -26,7 +25,9 @@ pulsemixer
 resvg
 ripgrep
 termdown
+tree-sitter-cli
 ttf-jetbrains-mono-nerd
+ttf-liberation
 ttf-nerd-fonts-symbols-mono
 ueberzugpp
 wl-clipboard

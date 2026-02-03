@@ -1,5 +1,5 @@
 pkgname=Yellow
-pkgver=2025.08.04
+pkgver=2026.01.24
 pkgrel=1
 arch=('any')
 url="https://github.com/eAlexandrohin/dotfiles"
