@@ -44,24 +44,30 @@ src/
 !/.config/hypr/wallpaper/
 !/.config/hypr/wallpaper/*
 
+!/.config/lazygit/
+!/.config/lazygit/config.yml
+
 !/.config/ly/
 !/.config/ly/config.ini
+
+!/.config/mako/
+!/.config/mako/config
 
 !/.config/neovim/
 !/.config/neovim/lua/
 !/.config/neovim/lua/plugins/
 !/.config/neovim/lua/plugins/config.lua
 
-!/.config/mako/
-!/.config/mako/config
-
 !/.config/tofi/
 !/.config/tofi/config
 
+!/.config/vconsole/
+!/.config/vconsole/vconsole.conf
+
 !/.config/yazi/
+!/.config/yazi/syntax.tmTheme
 !/.config/yazi/theme.toml
 !/.config/yazi/yazi.toml
-!/.config/yazi/syntax.tmTheme
 
 !/.deps/
 !/.deps/.deps
