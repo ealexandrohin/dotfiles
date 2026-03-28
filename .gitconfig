@@ -3,3 +3,5 @@
 	email = ealexandrohin@gmail.com
 [credential]
 	helper = store
+[url "git@github.com:"]
+	insteadOf = https://github.com/
