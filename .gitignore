@@ -55,6 +55,8 @@ src/
 
 !/.config/neovim/
 !/.config/neovim/lua/
+!/.config/neovim/lua/config/
+!/.config/neovim/lua/config/keymaps.lua
 !/.config/neovim/lua/plugins/
 !/.config/neovim/lua/plugins/config.lua
 
