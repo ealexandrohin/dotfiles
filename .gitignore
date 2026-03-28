@@ -74,3 +74,6 @@ src/
 !/.deps/PKGBUILD
 
 !/.gitconfig
+
+!/.zimrc
+!/.zprofile
