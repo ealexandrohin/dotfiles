@@ -1,0 +1,6 @@
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = git@github.com:ealexandrohin/nvim.git
+[submodule "yay-bin"]
+	path = yay-bin
+	url = https://aur.archlinux.org/yay-bin.git
