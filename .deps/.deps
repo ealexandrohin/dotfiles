@@ -1,5 +1,6 @@
 7zip
 alacritty
+base-devel
 bluetui
 brightnessctl
 btop
@@ -32,6 +33,7 @@ resvg
 ripgrep
 termdown
 terminus-font
+tree
 tree-sitter-cli
 ttf-jetbrains-mono-nerd
 ttf-liberation
