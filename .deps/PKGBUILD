@@ -1,5 +1,5 @@
 pkgname=theme
-pkgver=2026.01.24
+pkgver=2026.04.27
 pkgrel=1
 arch=('any')
 url="https://github.com/eAlexandrohin/dotfiles"
