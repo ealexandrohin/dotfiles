@@ -2,6 +2,7 @@
   "allowDuplicates": false,
   "maxHistory": 1000,
   "keyBindings": {
+    "quit": "q",
     "prevPage": "h",
     "down": "j",
     "up": "k",
