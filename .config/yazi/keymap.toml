@@ -1,0 +1,17 @@
+"$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
+
+[mgr]
+keymap = [
+  { on = [
+    "g",
+    "P",
+  ], run = "cd ~/Pictures", desc = "Go ~/Pictures" },
+  { on = [
+    "g",
+    "u",
+  ], run = "cd ~/u", desc = "Go to university" },
+  { on = [
+    "g",
+    "w",
+  ], run = "cd ~/w", desc = "Go to work" },
+]

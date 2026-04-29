@@ -62,6 +62,7 @@ src/
 !/.config/vconsole/vconsole.conf
 
 !/.config/yazi/
+!/.config/yazi/keymap.toml
 !/.config/yazi/syntax.tmTheme
 !/.config/yazi/theme.toml
 !/.config/yazi/yazi.toml
