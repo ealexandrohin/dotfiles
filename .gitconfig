@@ -14,3 +14,8 @@
 	insteadOf = https://github.com/
 [url "git@gitlab.com:"]
 	insteadOf = https://gitlab.com/
+
+[includeIf "gitdir:~/w/"]
+    path = .gitconfig.work
+[includeIf "gitdir:~/u/"]
+    path = .gitconfig.uni
