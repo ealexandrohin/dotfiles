@@ -49,6 +49,7 @@ src/
 
 !/.config/ly/
 !/.config/ly/config.ini
+!/.config/ly/vconsole.conf
 
 !/.config/mako/
 !/.config/mako/config
@@ -57,9 +58,6 @@ src/
 
 !/.config/tofi/
 !/.config/tofi/config
-
-!/.config/vconsole/
-!/.config/vconsole/vconsole.conf
 
 !/.config/yazi/
 !/.config/yazi/keymap.toml
