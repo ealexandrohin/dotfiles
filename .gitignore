@@ -71,6 +71,10 @@ src/
 
 !/.gitconfig
 
+!/.icons/
+!/.icons/default/
+!/.icons/default/index.theme
+
 !/.zimrc
 !/.zprofile
 !/.zshrc
