@@ -54,6 +54,8 @@ src/
 !/.config/mako/
 !/.config/mako/config
 
+!/.config/mimeapps.list
+
 !/.config/nvim/
 
 !/.config/tofi/
