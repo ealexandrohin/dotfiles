@@ -1,12 +1,22 @@
 [Default Applications]
-x-scheme-handler/unknown=firefox.desktop
+inode/directory=Alacritty-open.desktop
+application/x-sh=Alacritty.desktop
+application/x-shellscript=Alacritty.desktop
+x-scheme-handler/ssh=Alacritty.desktop
 
-x-scheme-handler/terminal=alacritty.desktop
-
+text/html=firefox.desktop
+application/pdf=firefox.desktop
 x-scheme-handler/http=firefox.desktop
 x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
 
+; image/*=imv.desktop
 image/png=imv.desktop
 image/jpeg=imv.desktop
-image/gif=imv.desktop
 image/webp=imv.desktop
+image/gif=imv.desktop
+
+x-scheme-handler/bruno=bruno.desktop
+
+x-scheme-handler/discord=vesktop.desktop
