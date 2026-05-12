@@ -77,6 +77,10 @@ src/
 !/.icons/default/
 !/.icons/default/index.theme
 
+!/.work/
+!/.work/.deps
+!/.work/PKGBUILD
+
 !/.zimrc
 !/.zprofile
 !/.zshrc

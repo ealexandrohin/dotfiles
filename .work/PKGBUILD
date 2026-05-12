@@ -1,0 +1,7 @@
+pkgname=work
+pkgver=2026.05.12
+pkgrel=1
+arch=('any')
+url="https://github.com/ealexandrohin/dotfiles"
+license=('MIT')
+depends=($(sed '/^[[:space:]]*$/d;/^[[:space:]]*#/d' .work))
