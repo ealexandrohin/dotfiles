@@ -78,7 +78,7 @@ src/
 !/.icons/default/index.theme
 
 !/.work/
-!/.work/.deps
+!/.work/.work
 !/.work/PKGBUILD
 
 !/.zimrc
