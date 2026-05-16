@@ -1,15 +1,17 @@
 [user]
 	name = ealexandrohin
 	email = ealexandrohin@gmail.com
-	signingkey = E7CC2FF93C377CC2D85A771E028B8C15F55A43C6
+	signingkey = 24E69ABDE842C934
 [credential]
 	helper = store
-[init]
-	defaultBranch = main
 [core]
 	editor = nvim
+[init]
+	defaultBranch = main
 [commit]
 	gpgsign = true
+[tag]
+	gpgSign = true
 [pull]
 	ff = only
 [submodule]
