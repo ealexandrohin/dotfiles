@@ -17,7 +17,8 @@
 [submodule]
 	recurse = true
 [format]
-	signOff = true
+  signOff = true
+  signature = @ealexandrohin
 
 [url "git@github.com:"]
 	insteadOf = https://github.com/
