@@ -10,6 +10,7 @@ fd
 ffmpeg
 firefox
 flameshot
+fluidsynth
 fzf
 gimp
 git
@@ -29,11 +30,15 @@ nodejs
 npm
 ntfs-3g
 numbat
+openttd
+openttd-opengfx
+openttd-opensfx
 perl-image-exiftool
 poppler
 pulsemixer
 resvg
 ripgrep
+soundfont-fluid
 sshfs
 telegram-desktop
 termdown
