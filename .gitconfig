@@ -16,6 +16,8 @@
 	ff = only
 [submodule]
 	recurse = true
+[format]
+	signOff = true
 
 [url "git@github.com:"]
 	insteadOf = https://github.com/
