@@ -30,3 +30,9 @@
   sudo cp /usr/share/applications/Alacritty.desktop /usr/share/applications/Alacritty-open.desktop
   sudo sed -i "s/^Exec=alacritty$/Exec=alacritty --working-directory %U/" /usr/share/applications/Alacritty-open.desktop
 )
+
+(
+  sudo mkdir /hdd
+  sudo mkdir /windows
+  sudo mkdir /usb
+)
