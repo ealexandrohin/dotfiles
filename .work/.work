@@ -2,5 +2,6 @@ bruno
 dive
 grype-bin
 opengrep
+skopeo
 syft
 trivy
