@@ -37,6 +37,9 @@ src/
 !/.config/flameshot/
 !/.config/flameshot/flameshot.ini
 
+!/.config/freerdp/
+!/.config/freerdp/sdl-freerdp.json
+
 !/.config/hypr/
 !/.config/hypr/hyprland.conf
 !/.config/hypr/hyprlock.conf

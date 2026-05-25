@@ -1,0 +1,11 @@
+{
+  "SDL_KeyModMask": [
+    "SDL_KMOD_LGUI",
+    "SDL_KMOD_LSHIFT"
+  ],
+  "SDL_Fullscreen": "SDL_SCANCODE_F11",
+  "SDL_Minimize": "SDL_SCANCODE_F9",
+  "SDL_Resizeable": "SDL_SCANCODE_S",
+  "SDL_Grab": "SDL_SCANCODE_R",
+  "SDL_Disconnect": "SDL_SCANCODE_ESCAPE"
+}
