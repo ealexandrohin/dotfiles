@@ -1,10 +1,12 @@
 ZIM_HOME=${ZDOTDIR:-${HOME}}/.zim
-# Install missing modules and update ${ZIM_HOME}/init.zsh if missing or outdated.
 if [[ ! ${ZIM_HOME}/init.zsh -nt ${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc} ]]; then
   source /usr/share/zimfw/zimfw.zsh init
 fi
-# Initialize modules.
 source ${ZIM_HOME}/init.zsh
+
+source <(fzf --zsh)
+
+alias n="nvim ."
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -14,4 +16,4 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-source <(fzf --zsh)
+[[ -f ~/w/ealex/work.zsh ]] && source ~/w/ealex/work.zsh
