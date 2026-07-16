@@ -11,6 +11,10 @@ git remote set-url origin ssh://git@github.com/ealexandrohin/dotfiles.git
   git clone https://aur.archlinux.org/yay-bin.git
   cd yay-bin || exit
   makepkg -si
+
+  yay -Y --gendb
+  yay -Syu --devel
+  yay -Y --devel --save
 )
 
 (
