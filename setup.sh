@@ -23,7 +23,8 @@
 
 (
   sudo cp /etc/vconsole.conf /etc/vconsole.conf.backup
-  sudo awk -F= 'NR==FNR{a[$1]=$0;next} $1 in a{print a[$1];delete a[$1];next} {print} END{for(k in a)print a[k]}' ~/.config/ly/vconsole.conf /etc/vconsole.conf >/tmp/vconsole.conf && sudo mv /tmp/vconsole.conf /etc/vconsole.conf
+  awk -F= 'NR==FNR{a[$1]=$0;next} $1 in a{print a[$1];delete a[$1];next} {print} END{for(k in a)print a[k]}' ~/.config/ly/vconsole.conf /etc/vconsole.conf >/tmp/vconsole.conf
+  sudo mv /tmp/vconsole.conf /etc/vconsole.conf
   sudo mkinitcpio -P
 )
 
@@ -34,6 +35,7 @@
 
 (
   sudo mkdir /hdd
-  sudo mkdir /windows
   sudo mkdir /usb
+  sudo mkdir /ventoy
+  sudo mkdir /windows
 )
