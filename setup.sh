@@ -45,3 +45,8 @@ git remote set-url origin ssh://git@github.com/ealexandrohin/dotfiles.git
   sudo mkdir /ventoy
   sudo mkdir /windows
 )
+
+(
+  zsh
+  chsh -s /usr/bin/zsh
+)
