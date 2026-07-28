@@ -7,11 +7,11 @@ foreground = '#ffffff'
 
 [colors.selection]
 text = '#ffffff'
-background = '#ffbf00'
+background = '#0000ff'
 
 [colors.cursor]
 text = '#ffffff'
-cursor = '#ffbf00'
+cursor = '#0000ff'
 
 # Normal colors
 [colors.normal]
