@@ -1,5 +1,5 @@
 pkgname=theme
-pkgver=2026.04.27
+pkgver=$(date +%Y.%m.%d)
 pkgrel=1
 arch=('any')
 url="https://github.com/ealexandrohin/dotfiles"

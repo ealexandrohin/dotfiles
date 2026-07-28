@@ -44,6 +44,7 @@ git remote set-url origin ssh://git@github.com/ealexandrohin/dotfiles.git
   sudo mkdir /usb
   sudo mkdir /ventoy
   sudo mkdir /windows
+  sudo chown alex:alex /hdd /usb /ventoy /windows
 )
 
 (
@@ -53,4 +54,8 @@ git remote set-url origin ssh://git@github.com/ealexandrohin/dotfiles.git
 
 (
   sudo systemctl enable --now v2raya
+)
+
+(
+  mkdir Pictures
 )
