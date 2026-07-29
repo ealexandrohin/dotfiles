@@ -88,4 +88,5 @@ src/
 !/.zprofile
 !/.zshrc
 
+!/init.sh
 !/setup.sh
