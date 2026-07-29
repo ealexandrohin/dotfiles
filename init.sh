@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git remote set-url origin ssh://git@github.com/ealexandrohin/dotfiles.git
+
 (
   sudo mkdir /hdd
   sudo mkdir /usb
