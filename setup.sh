@@ -2,43 +2,17 @@
 
 git remote set-url origin ssh://git@github.com/ealexandrohin/dotfiles.git
 
+sudo usermod -aG shared $USER
+
 (
-  cd .deps/ || exit
-  makepkg -si
+  mkdir -p Pictures/Flameshot
 )
 
 (
-  git clone https://aur.archlinux.org/yay-bin.git
-  cd yay-bin || exit
-  makepkg -si
-
-  yay -Y --gendb
-  yay -Syu --devel
-  yay -Y --devel --save
+  zsh
+  chsh -s /usr/bin/zsh
 )
 
 (
-  cd .aur/ || exit
-  yay -Bi .
-)
-
-(
-  sudo mv /etc/ly/config.ini /etc/ly/config.ini.backup
-  sudo ln -s ~/.config/ly/config.ini /etc/ly/config.ini
-)
-
-(
-  sudo cp /etc/vconsole.conf /etc/vconsole.conf.backup
-  awk -F= 'NR==FNR{a[$1]=$0;next} $1 in a{print a[$1];delete a[$1];next} {print} END{for(k in a)print a[k]}' ~/.config/ly/vconsole.conf /etc/vconsole.conf >/tmp/vconsole.conf
-  sudo mv /tmp/vconsole.conf /etc/vconsole.conf
-  sudo mkinitcpio -P
-)
-
-(
-  sudo cp /usr/share/applications/Alacritty.desktop /usr/share/applications/Alacritty-open.desktop
-  sudo sed -i "s/^Exec=alacritty$/Exec=alacritty --working-directory %U/" /usr/share/applications/Alacritty-open.desktop
-)
-
-(
-  sudo systemctl enable --now v2raya
+  ya pkg add yazi-rs/plugins:git
 )

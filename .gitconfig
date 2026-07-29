@@ -8,10 +8,6 @@
 	editor = nvim
 [init]
 	defaultBranch = main
-[commit]
-	gpgsign = true
-[tag]
-	gpgSign = true
 [pull]
 	ff = only
 [submodule]
