@@ -40,22 +40,5 @@ git remote set-url origin ssh://git@github.com/ealexandrohin/dotfiles.git
 )
 
 (
-  sudo mkdir /hdd
-  sudo mkdir /usb
-  sudo mkdir /ventoy
-  sudo mkdir /windows
-  sudo chown alex:alex /hdd /usb /ventoy /windows
-)
-
-(
-  zsh
-  chsh -s /usr/bin/zsh
-)
-
-(
   sudo systemctl enable --now v2raya
-)
-
-(
-  mkdir Pictures
 )
