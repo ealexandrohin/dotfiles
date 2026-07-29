@@ -1,7 +1,7 @@
 [user]
 	name = ealexandrohin
 	email = ealexandrohin@gmail.com
-	signingkey = 24E69ABDE842C934
+	signingkey = ~/.ssh/id_ed25519.pub
 [credential]
 	helper = store
 [core]
@@ -19,6 +19,9 @@
 [format]
   signOff = true
   signature = @ealexandrohin
+
+[gpg]
+  format = ssh
 
 [includeIf "gitdir:~/w/"]
     path = .gitconfig.work
