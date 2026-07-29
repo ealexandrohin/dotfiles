@@ -1,8 +1,16 @@
 bruno
 dive
+docker
+docker-buildx
+docker-compose
+go
 grype-bin
+kubectl
+lazydocker
+networkmanager-openvpn
+nodejs
+npm
 opengrep
-openvpn3
 skopeo
 syft
 trivy
