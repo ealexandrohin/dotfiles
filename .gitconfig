@@ -7,7 +7,7 @@
 [core]
 	editor = nvim
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [pull]
 	ff = only
 [submodule]
