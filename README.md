@@ -17,3 +17,9 @@ git init -b work -q && git remote add origin https://github.com/ealexandrohin/do
 ```shell
 chmod +x setup.sh && ./setup.sh
 ```
+
+---
+
+```shell
+chmod +x work.sh && ./work.sh
+```
