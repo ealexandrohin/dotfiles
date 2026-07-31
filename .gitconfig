@@ -7,23 +7,21 @@
 [core]
 	editor = nvim
 [init]
-	defaultBranch = main
-[commit]
-	gpgsign = true
-[tag]
-	gpgSign = true
+	defaultBranch = master
 [pull]
 	ff = only
 [submodule]
 	recurse = true
+
+[gpg]
+  format = ssh
+[commit]
+  gpgsign = true
+[tag]
+  gpgSign = true
 [format]
   signOff = true
   signature = @ealexandrohin
 
-[gpg]
-  format = ssh
-
-[includeIf "gitdir:~/w/"]
-    path = .gitconfig.work
-[includeIf "gitdir:~/u/"]
-    path = .gitconfig.uni
+[includeIf "gitdir:~/*/"]
+	path = ~/w/.gitconfig

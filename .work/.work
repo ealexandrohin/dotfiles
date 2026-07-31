@@ -11,6 +11,8 @@ networkmanager-openvpn
 nodejs
 npm
 opengrep
+smbclient
+cifs-utils
 skopeo
 syft
 trivy
