@@ -17,4 +17,8 @@ append_keymap = [
     "g",
     "w",
   ], run = "cd ~/w", desc = "Go to work" },
+  { on = [
+    "g",
+    "m",
+  ], run = "cd /mnt", desc = "Go /mnt" },
 ]
