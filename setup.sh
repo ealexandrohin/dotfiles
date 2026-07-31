@@ -2,7 +2,7 @@
 
 git remote set-url origin ssh://git@github.com/ealexandrohin/dotfiles.git
 
-sudo usermod -aG shared $USER
+sudo usermod -aG shared "$USER"
 
 (
   mkdir -p Pictures/Flameshot
