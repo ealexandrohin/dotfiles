@@ -1,22 +1,27 @@
 [user]
-	name = ealexandrohin
-	email = ealexandrohin@gmail.com
-	signingkey = 24E69ABDE842C934
+  name = ealexandrohin
+  email = ealexandrohin@gmail.com
+  signingkey = ~/.ssh/id_ed25519.pub
 [credential]
-	helper = store
+  helper = store
 [core]
-	editor = nvim
+  editor = nvim
 [init]
-	defaultBranch = main
+  defaultBranch = main
 [pull]
-	ff = only
+  ff = only
 [submodule]
-	recurse = true
+  recurse = true
+
+[gpg]
+  format = ssh
+[commit]
+  gpgsign = true
+[tag]
+  gpgSign = true
 [format]
   signOff = true
   signature = @ealexandrohin
 
-[includeIf "gitdir:~/w/"]
-    path = .gitconfig.work
-[includeIf "gitdir:~/u/"]
-    path = .gitconfig.uni
+[includeIf "gitdir:~/*/**"]
+  path = ~/w/.gitconfig
