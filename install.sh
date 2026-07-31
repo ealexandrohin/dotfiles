@@ -38,17 +38,9 @@
 )
 
 (
-  sudo mkdir /hdd
-  sudo mkdir /usb
-  sudo mkdir /ventoy
-  sudo mkdir /windows
-
-  sudo groupadd shared
-  sudo chown :shared /hdd /usb /ventoy /windows
-  sudo chmod g+rwx /hdd /usb /ventoy /windows
+  sudo mkdir -p /mnt/hdd /mnt/usb /mnt/ventoy /mnt/windows
 )
 
 (
-  sudo systemctl enable --now systemd-resolved
-  sudo systemctl enable --now v2raya
+  sudo systemctl enable --now systemd-resolved v2raya
 )
