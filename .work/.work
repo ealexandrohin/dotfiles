@@ -1,8 +1,10 @@
 bruno
+cifs-utils
 dive
 docker
 docker-buildx
 docker-compose
+electron37-bin
 go
 grype-bin
 kubectl
@@ -11,8 +13,7 @@ networkmanager-openvpn
 nodejs
 npm
 opengrep
-smbclient
-cifs-utils
 skopeo
+smbclient
 syft
 trivy
