@@ -12,6 +12,8 @@
 	ff = only
 [submodule]
 	recurse = true
+[format]
+  pretty = oneline
 
 [gpg]
   format = ssh
