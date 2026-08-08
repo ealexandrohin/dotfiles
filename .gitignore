@@ -34,6 +34,9 @@ src/
 !/.config/clipse/
 !/.config/clipse/config.json
 
+!/.config/driftwm/
+!/.config/driftwm/config.toml
+
 !/.config/flameshot/
 !/.config/flameshot/flameshot.ini
 

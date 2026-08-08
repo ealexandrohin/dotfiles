@@ -1,0 +1,25 @@
+mod_key = "super"
+
+[input.keyboard]
+layout = "us,ru"
+options = "grp:alt_shift_toggle"
+
+
+[input.mouse]
+accel_speed = 0.0
+accel_profile = "flat"
+
+[input.touch]
+enable = false
+
+[cursor]
+theme = "Bibata-Modern-Classic"
+size = 32
+
+
+[decorations]
+bg_color = "#ffbf00"
+fg_color = "#FFFFFF"
+
+[keybindings]
+# "mod+ctrl+shift+left" = "shrink-window right"
