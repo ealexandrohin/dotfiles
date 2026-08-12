@@ -6,6 +6,8 @@ source ${ZIM_HOME}/init.zsh
 
 source <(fzf --zsh)
 
+alias l="ls -lha"
+alias lg="lazygit"
 alias n="nvim ."
 
 function y() {
