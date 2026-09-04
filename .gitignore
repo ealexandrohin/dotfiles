@@ -83,6 +83,10 @@ src/
 !/.icons/default/
 !/.icons/default/index.theme
 
+!/.uni/
+!/.uni/.uni
+!/.uni/PKGBUILD
+
 !/.work/
 !/.work/.work
 !/.work/PKGBUILD
