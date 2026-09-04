@@ -3,13 +3,13 @@
 	email = ealexandrohin@gmail.com
 	signingkey = ~/.ssh/id_ed25519.pub
 [credential]
-	helper = store
+  helper = store
 [core]
-	editor = nvim
+  editor = nvim
 [init]
 	defaultBranch = main
 [pull]
-	ff = only
+  ff = only
 [submodule]
 	recurse = true
 [format]
