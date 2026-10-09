@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git remote set-url origin ssh://git@github.com/ealexandrohin/dotfiles.git
+git remote set-url origin ssh://git@codeberg.org/ealexandrohin/dotfiles.git
 
 (
   mkdir -p Pictures/Flameshot
