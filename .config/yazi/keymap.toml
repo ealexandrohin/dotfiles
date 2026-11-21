@@ -1,6 +1,10 @@
 [mgr]
 prepend_keymap = [
   { on = [
+    "m",
+    "a",
+  ], run = "linemode all", desc = "Linemode: all" },
+  { on = [
     "C",
   ], run = "plugin compress", desc = "Compress selected files" },
   { on = [

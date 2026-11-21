@@ -147,7 +147,7 @@ rules = [
 
   # Special file
   { url = "*", is = "orphan", bg = "#f38ba8" },
-  { url = "*", is = "exec", fg = "#a6e3a1" },
+  { url = "*", is = "exec", fg = "#f38ba8" },
 
   # Dummy file
   { url = "*", is = "dummy", bg = "#f38ba8" },
