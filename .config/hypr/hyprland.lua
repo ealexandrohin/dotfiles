@@ -6,17 +6,10 @@ local u = require("utils")
 
 hl.monitor({
 	output = "eDP-1",
-	mode = "1920x1080@144",
+	mode = "1920x1080@60",
 	position = "0x0",
 	scale = "1",
 })
-
--- hl.monitor({
--- 	output = "HDMI-A-1",
--- 	mode = "preferred",
--- 	position = "0x-1080",
--- 	scale = "1",
--- })
 
 -- hl.monitor({
 -- 	output = "HDMI-A-1",
@@ -44,7 +37,7 @@ hl.config({
 		no_focus_fallback = true,
 
 		col = {
-			active_border = "rgba(ffbf00ff)",
+			active_border = "rgba(00ff00ff)",
 			inactive_border = "rgba(000000ff)",
 		},
 	},
@@ -317,12 +310,12 @@ hl.env("XCURSOR_SIZE", "32")
 hl.env("EDITOR", "nvim")
 hl.env("TERMINAL", "alacritty")
 
-hl.env("GBM_BACKEND", "nvidia-drm")
-hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
-hl.env("LIBVA_DRIVER_NAME", "nvidia")
-hl.env("NVD_BACKEND", "direct")
-
-hl.env("__NV_PRIME_RENDER_OFFLOAD", "1")
-hl.env("AQ_DRM_DEVICES", "/dev/dri/card0:/dev/dri/card1")
+-- hl.env("GBM_BACKEND", "nvidia-drm")
+-- hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+-- hl.env("LIBVA_DRIVER_NAME", "nvidia")
+-- hl.env("NVD_BACKEND", "direct")
+--
+-- hl.env("__NV_PRIME_RENDER_OFFLOAD", "1")
+-- hl.env("AQ_DRM_DEVICES", "/dev/dri/card0:/dev/dri/card1")
 
 -- hl.env("WLR_NO_HARDWARE_CURSORS", "1")
