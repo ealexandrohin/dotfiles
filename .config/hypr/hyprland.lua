@@ -1,5 +1,9 @@
 local u = require("utils")
 
+--
+-- monitors
+--
+
 hl.monitor({
 	output = "eDP-1",
 	mode = "1920x1080@144",
@@ -27,6 +31,10 @@ hl.monitor({
 -- 		overlay = true,
 -- 	},
 -- })
+
+--
+-- general
+--
 
 hl.config({
 	general = {
@@ -81,6 +89,10 @@ hl.config({
 	},
 })
 
+--
+-- autostart
+--
+
 hl.on("hyprland.start", function()
 	hl.exec_cmd("hyprpaper")
 	hl.exec_cmd("mako")
@@ -91,6 +103,10 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("hyprctl setcursor Bibata-Modern-Classic 32")
 	hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
 end)
+
+--
+-- binds
+--
 
 hl.bind("SUPER + SHIFT + Q", hl.dsp.window.close())
 hl.bind("SUPER + W", hl.dsp.exec_cmd("firefox"))
@@ -150,6 +166,10 @@ hl.bind("SUPER + Space", hl.dsp.layout("togglesplit"))
 
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag())
 
+--
+-- workspace rules
+--
+
 hl.workspace_rule({
 	workspace = "1",
 	monitor = "eDP-1",
@@ -189,6 +209,10 @@ for _, w in ipairs(HDMI) do
 	})
 end
 
+--
+-- workspace binds
+--
+
 for i = 1, 10 do
 	local key = tostring(i % 10)
 
@@ -202,6 +226,10 @@ hl.bind("SUPER + Grave", hl.dsp.focus({ workspace = "name:btop" }))
 hl.bind("SUPER + Escape", hl.dsp.focus({ workspace = "name:btop" }))
 hl.bind("SUPER + SHIFT + Grave", hl.dsp.focus({ workspace = "name:tenki" }))
 hl.bind("SUPER + SHIFT + Escape", hl.dsp.focus({ workspace = "name:tenki" }))
+
+--
+-- window rules
+--
 
 hl.window_rule({
 	name = "ueberzugpp",
@@ -278,6 +306,10 @@ hl.window_rule({
 	stay_focused = true,
 	fullscreen = true,
 })
+
+--
+-- envs
+--
 
 hl.env("XCURSOR_THEME", "Bibata-Modern-Classic")
 hl.env("XCURSOR_SIZE", "32")
