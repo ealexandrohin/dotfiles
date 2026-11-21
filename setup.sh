@@ -3,7 +3,7 @@
 git remote set-url origin ssh://git@codeberg.org/ealexandrohin/dotfiles.git
 
 (
-  mkdir -p Pictures/Flameshot
+  mkdir -p ~/Pictures/Flameshot
 )
 
 (
