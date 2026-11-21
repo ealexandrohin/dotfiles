@@ -44,11 +44,9 @@ src/
 !/.config/freerdp/sdl-freerdp.json
 
 !/.config/hypr/
+!/.config/hypr/*.conf
+!/.config/hypr/*.lua
 !/.config/hypr/.luarc.json
-!/.config/hypr/hyprland.conf
-!/.config/hypr/hyprland.lua
-!/.config/hypr/hyprlock.conf
-!/.config/hypr/hyprpaper.conf
 !/.config/hypr/wallpaper/
 !/.config/hypr/wallpaper/*
 
