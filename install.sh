@@ -9,7 +9,7 @@ esac
 sudo pacman -S --needed git base-devel
 
 git init -b "$BRANCH" -q
-git remote add origin https://github.com/ealexandrohin/dotfiles.git
+git remote add origin https://codeberg.org/ealexandrohin/dotfiles.git
 git fetch origin
 git reset --hard "origin/$BRANCH"
 git branch -u "origin/$BRANCH"

@@ -1,5 +1,5 @@
 # dotfiles
 
 ```shell
-wget -O - https://github.com/ealexandrohin/dotfiles/raw/refs/heads/main/install.sh | bash
+wget -O - https://codeberg.org/ealexandrohin/dotfiles/raw/branch/main/install.sh | bash
 ```
