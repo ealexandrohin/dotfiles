@@ -1,5 +1,6 @@
 [mgr]
-ratio = [1, 3, 4]
+ratio = [1, 4, 3]
+linemode = "s_o_p_b"
 show_hidden = true
 
 [preview]
