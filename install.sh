@@ -1,71 +1,18 @@
 #!/bin/bash
 
 case "$USER" in
-work) BRANCH="work" ;;
-uni) BRANCH="uni" ;;
-*) BRANCH="main" ;;
+work) branch="work" ;;
+uni) branch="uni" ;;
+*) branch="main" ;;
 esac
 
-sudo pacman -S --needed git base-devel
+sudo pacman -Sy --needed git base-devel
 
-git init -b "$BRANCH" -q
+git init -b "$branch" -q
 git remote add origin https://codeberg.org/ealexandrohin/dotfiles.git
 git fetch origin
-git reset --hard "origin/$BRANCH"
-git branch -u "origin/$BRANCH"
+git reset --hard "origin/$branch"
+git branch -u "origin/$branch"
 git submodule update --init
 
-if [ $BRANCH = "main" ]; then
-  (
-    cd .deps/ || exit
-    makepkg -si
-  )
-
-  (
-    git clone https://aur.archlinux.org/yay-bin.git
-    cd yay-bin || exit
-    makepkg -si
-
-    yay -Y --gendb
-    yay -Syu --devel
-    yay -Y --devel --save
-  )
-
-  (
-    cd .aur/ || exit
-    yay -Bi .
-  )
-
-  (
-    sudo mv /etc/ly/config.ini /etc/ly/config.ini.backup
-    sudo ln -s ~/.config/ly/config.ini /etc/ly/config.ini
-  )
-
-  (
-    sudo cp /etc/vconsole.conf /etc/vconsole.conf.backup
-    awk -F= 'NR==FNR{a[$1]=$0;next} $1 in a{print a[$1];delete a[$1];next} {print} END{for(k in a)print a[k]}' ~/.config/ly/vconsole.conf /etc/vconsole.conf >/tmp/vconsole.conf
-    sudo mv /tmp/vconsole.conf /etc/vconsole.conf
-    sudo mkinitcpio -P
-  )
-
-  (
-    sudo cp /usr/share/applications/Alacritty.desktop /usr/share/applications/Alacritty-open.desktop
-    sudo sed -i "s/^Exec=alacritty$/Exec=alacritty --working-directory %U/" /usr/share/applications/Alacritty-open.desktop
-  )
-
-  (
-    sudo mkdir -p /mnt/hdd /mnt/usb /mnt/ventoy /mnt/windows
-  )
-
-  (
-    sudo systemctl enable --now systemd-resolved v2raya
-  )
-fi
-
-chmod +x setup.sh && ./setup.sh
-
-case "$USER" in
-work) chmod +x work.sh && ./work.sh ;;
-uni) chmod +x uni.sh && ./uni.sh ;;
-*) ;;
-esac
+chmod +x $branch.sh && ./$branch.sh
