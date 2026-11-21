@@ -25,6 +25,3 @@
 [format]
   signOff = true
   signature = @ealexandrohin
-
-[includeIf "gitdir:~/*/**"]
-	path = ~/w/.gitconfig
