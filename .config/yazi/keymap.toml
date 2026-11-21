@@ -1,5 +1,25 @@
 [mgr]
-prepend_keymap = [{ on = ["M"], run = "plugin mount" }]
+prepend_keymap = [
+  { on = [
+    "C",
+  ], run = "plugin compress", desc = "Compress selected files" },
+  { on = [
+    "M",
+  ], run = "plugin mount", desc = "Mount" },
+  { on = [
+    "-",
+  ], run = "plugin toggle-pane min-parent", desc = "Show or hide the parent pane" },
+  { on = [
+    "=",
+  ], run = "plugin toggle-pane max-current", desc = "Maximize or restore the current pane" },
+  { on = [
+    "_",
+  ], run = "plugin toggle-pane min-preview", desc = "Show or hide the preview pane" },
+  { on = [
+    "+",
+  ], run = "plugin toggle-pane max-preview", desc = "Maximize or restore the preview pane" },
+]
+
 append_keymap = [
   { on = [
     "g",
