@@ -11,20 +11,12 @@ hl.monitor({
 	scale = "1",
 })
 
--- hl.monitor({
--- 	output = "HDMI-A-1",
--- 	mode = "preferred",
--- 	position = "0x-1080",
--- 	scale = "1",
--- })
-
--- hl.monitor({
--- 	output = "HDMI-A-1",
--- 	mode = "preferred",
--- 	position = "auto",
--- 	scale = "auto",
--- 	mirror = "eDP-1",
--- })
+hl.monitor({
+	output = "HDMI-A-1",
+	mode = "preferred",
+	position = "0x-1080",
+	scale = "1",
+})
 
 -- hl.config({
 -- 	debug = {
@@ -44,7 +36,7 @@ hl.config({
 		no_focus_fallback = true,
 
 		col = {
-			active_border = "rgba(ffbf00ff)",
+			active_border = "rgba(0000ffff)",
 			inactive_border = "rgba(000000ff)",
 		},
 	},
@@ -81,8 +73,9 @@ hl.config({
 	},
 	cursor = {
 		hide_on_key_press = true,
+
 		-- wlfreerdp3/qemu cursor supposed fix
-		-- no_hardware_cursors = true
+		no_hardware_cursors = true,
 	},
 	ecosystem = {
 		no_update_news = true,
@@ -115,6 +108,7 @@ hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd("zen-browser"))
 hl.bind("SUPER + SHIFT + CONTROL + W", hl.dsp.exec_cmd("zen-browser --incognito"))
 hl.bind("SUPER + E", hl.dsp.exec_cmd(u.alacritty({ cmd = "zsh", args = '-ic "y; zsh"', class = "yazi" })))
 hl.bind("SUPER + R", hl.dsp.exec_cmd("tofi-drun --drun-launch=true"))
+hl.bind("SUPER + SHIFT + R", hl.dsp.focus({ workspace = "name:rdp" }))
 hl.bind("SUPER + T", function()
 	hl.dispatch(hl.dsp.focus({ workspace = "name:telegram" }))
 	hl.dispatch(hl.dsp.exec_cmd("Telegram"))
@@ -201,6 +195,7 @@ for i = 11, 20 do
 end
 
 table.insert(HDMI, "name:tenki")
+table.insert(HDMI, "name:rdp")
 
 for _, w in ipairs(HDMI) do
 	hl.workspace_rule({
@@ -230,6 +225,26 @@ hl.bind("SUPER + SHIFT + Escape", hl.dsp.focus({ workspace = "name:tenki" }))
 --
 -- window rules
 --
+
+hl.window_rule({
+	name = "autohide",
+	match = {
+		focus = false,
+		workspace = "m[1]",
+	},
+
+	opacity = 0.0,
+})
+
+hl.window_rule({
+	name = "freerdp",
+	match = {
+		class = ".*freerdp.*",
+	},
+	float = true,
+	size = "monitor_w-4 monitor_h-4",
+	workspace = "name:rdp",
+})
 
 hl.window_rule({
 	name = "ueberzugpp",
@@ -277,16 +292,6 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "discord",
-	match = {
-		class = "discord",
-	},
-
-	workspace = "name:discord",
-	maximize = true,
-})
-
-hl.window_rule({
 	name = "yandex-music",
 	match = {
 		class = "YandexMusic",
@@ -325,4 +330,5 @@ hl.env("NVD_BACKEND", "direct")
 hl.env("__NV_PRIME_RENDER_OFFLOAD", "1")
 hl.env("AQ_DRM_DEVICES", "/dev/dri/card0:/dev/dri/card1")
 
--- hl.env("WLR_NO_HARDWARE_CURSORS", "1")
+-- wlfreerdp3/qemu cursor supposed fix
+hl.env("WLR_NO_HARDWARE_CURSORS", "1")
