@@ -1,7 +1,8 @@
 pkgname=Yellow
-pkgver=$(date +%Y.%m.%d)
+pkgver=$(date +%Y%m%d)
 pkgrel=1
-arch=('any')
-url="https://github.com/ealexandrohin/dotfiles"
-license=('MIT')
+arch=('x86_64')
+url="https://codeberg.org/ealexandrohin/dotfiles"
+license=('AGPL-3.0-or-later')
+source=('.aur')
 depends=($(sed '/^[[:space:]]*$/d;/^[[:space:]]*#/d' .aur))
