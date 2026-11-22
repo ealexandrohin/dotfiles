@@ -1,7 +1,0 @@
-pkgname=Yellow
-pkgver=$(date +%Y.%m.%d)
-pkgrel=1
-arch=('any')
-url="https://github.com/ealexandrohin/dotfiles"
-license=('MIT')
-depends=($(sed '/^[[:space:]]*$/d;/^[[:space:]]*#/d' .aur))
