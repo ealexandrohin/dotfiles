@@ -1,0 +1,8 @@
+pkgname=work
+pkgver=$(date +%Y%m%d)
+pkgrel=1
+arch=('x86_64')
+url="https://codeberg.org/ealexandrohin/dotfiles"
+license=('AGPL-3.0-or-later')
+source=('.work')
+depends=($(sed '/^[[:space:]]*$/d;/^[[:space:]]*#/d' .work))
