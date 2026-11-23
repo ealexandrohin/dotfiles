@@ -68,6 +68,7 @@ src/
 !/.config/tofi/config
 
 !/.config/yazi/
+!/.config/yazi/init.lua
 !/.config/yazi/keymap.toml
 !/.config/yazi/syntax.tmTheme
 !/.config/yazi/theme.toml
